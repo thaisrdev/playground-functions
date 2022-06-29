@@ -14,34 +14,30 @@ console.log(compareTrue(macaco,girafa));
 
 // Desafio 2 - NÃO PASSOU
 
-function calcArea(base, height) {
-  return ((base*height)/2)
-}
-calcArea(10,50);
-calcArea(5,2);
-calcArea(51,1);
- 
+// function calcArea(base, height) {
+//   return ((base*height)/2)
+// }
+// calcArea(10,50);
+// calcArea(5,2);
+// // calcArea(51,1);
 
-// Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
+// // Desafio 3
+// function splitSentence() {
+//   // seu código aqui
+// }
 
+// function concatName([]) {
+//  console.log(concatName[concatName.length -1], concatName[0]);
+// }
 
-function concatName([]) {
- console.log(concatName[concatName.length -1], concatName[0]);
-}
+// concatName['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+// concatName['foguete', 'não', 'tem', 'ré'];
+// concatName['captain', 'my', 'captain'];
 
-concatName['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-concatName['foguete', 'não', 'tem', 'ré'];
-concatName['captain', 'my', 'captain'];
-
-
-
-// Desafio 5
-function footballPoints() {
-  // seu código aqui
-}
+// // Desafio 5
+// function footballPoints() {
+//   // seu código aqui
+// }
 
 // Desafio 6
 // function highestCount() {
@@ -50,20 +46,18 @@ function footballPoints() {
 
 function catAndMouse(mouse, cat1, cat2) {
   if ((Math.abs(mouse - cat1) > Math.abs(mouse - cat2))) {
-  return "cat2";
+  return 'cat2';
 } else if ((Math.abs(mouse - cat2)) > (Math.abs(mouse - cat1))) {
-  return "cat1";
+  return 'cat1';
 } else if ((Math.abs(mouse - cat2)) === (Math.abs(mouse - cat1))) {
-  return "os gatos trombam e o rato foge";
+  return 'os gatos trombam e o rato foge';
 }
 }
 console.log(catAndMouse(0, 3, 2));
 console.log(catAndMouse(10, 4, 22));
 console.log(catAndMouse(1, 0, 2));
 
-
-
-// Desafio 8
+// Desafio 8 - CONCLUIDO
 
 function fizzBuzz(array) {
   let result = [];
@@ -80,8 +74,7 @@ function fizzBuzz(array) {
  }
  return result;
  }
- console.log(fizzBuzz([9, 25]));
-
+ console.log(fizzBuzz([9, 25])); //TESTE
 
 // Desafio 9
 // function encode(string) {
@@ -102,11 +95,8 @@ function fizzBuzz(array) {
 // }
 // console.log (encode('a hello aeiou'));
 
-
-
 // function decode() {
-  // seu código aqui
-
+// seu código aqui
 
 // Desafio 10
 // function techList() {
