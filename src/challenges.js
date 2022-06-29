@@ -97,7 +97,7 @@ function encode(string) {
 // }
 // console.log (encode('a hello aeiou'));
 
-// function decode() {
+function decode() {
 // seu código aqui
 }
 
