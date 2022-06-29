@@ -14,12 +14,12 @@ console.log(compareTrue(macaco,girafa));
 
 // Desafio 2 - NÃO PASSOU
 
-// function calcArea(base, height) {
-//   return ((base*height)/2)
-// }
-// calcArea(10,50);
-// calcArea(5,2);
-// // calcArea(51,1);
+function calcArea(base, height) {
+  return ((base*height)/2)
+}
+calcArea(10,50);
+calcArea(5,2);
+calcArea(51,1);
 
 // // Desafio 3
 // function splitSentence() {
