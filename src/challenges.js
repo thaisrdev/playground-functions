@@ -1,4 +1,4 @@
-// Desafio 1 - COMCLUIDO
+// Desafio 1 - CONCLUIDO
 function compareTrue(parametro1, parametro2) {
 if (parametro1 === true && parametro2 === true) {
   return true;
@@ -17,32 +17,34 @@ console.log(compareTrue(macaco,girafa));
 function calcArea(base, height) {
   return ((base*height)/2)
 }
-calcArea(10,50);
-calcArea(5,2);
-calcArea(51,1);
+console.log(calcArea(10,50));
+console.log(calcArea(5,2));
+console.log(calcArea(51,1));
 
 // // Desafio 3
-// function splitSentence() {
+function splitSentence() {
 //   // seu código aqui
-// }
+}
 
-// function concatName([]) {
+// Desafio 4
+function concatName() {
 //  console.log(concatName[concatName.length -1], concatName[0]);
-// }
+}
 
 // concatName['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 // concatName['foguete', 'não', 'tem', 'ré'];
 // concatName['captain', 'my', 'captain'];
 
 // // Desafio 5
-// function footballPoints() {
+function footballPoints() {
 //   // seu código aqui
-// }
+}
 
 // Desafio 6
-// function highestCount() {
+function highestCount() {
 
-// Desafio 7
+}
+// Desafio 7 - NÃO PASSOU
 
 function catAndMouse(mouse, cat1, cat2) {
   if ((Math.abs(mouse - cat1) > Math.abs(mouse - cat2))) {
@@ -77,7 +79,7 @@ function fizzBuzz(array) {
  console.log(fizzBuzz([9, 25])); //TESTE
 
 // Desafio 9
-// function encode(string) {
+function encode(string) {
 // let arrayArmazena = string.split('');
 // for (let i=0; i<arrayArmazena.length; i += 1) {
 //   if (arrayArmazena[i] === 'a') {
@@ -97,22 +99,23 @@ function fizzBuzz(array) {
 
 // function decode() {
 // seu código aqui
+}
 
 // Desafio 10
-// function techList() {
+function techList() {
 //   // seu código aqui
-// }
+}
 
-// module.exports = {
-//   calcArea,
-//   catAndMouse,
-//   compareTrue,
-//   concatName,
-//   decode,
-//   encode,
-//   fizzBuzz,
-//   footballPoints,
-//   highestCount,
-//   splitSentence,
-//   techList,
-// };
+module.exports = {
+  calcArea,
+  catAndMouse,
+  compareTrue,
+  concatName,
+  decode,
+  encode,
+  fizzBuzz,
+  footballPoints,
+  highestCount,
+  splitSentence,
+  techList,
+};
