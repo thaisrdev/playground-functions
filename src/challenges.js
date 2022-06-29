@@ -1,4 +1,4 @@
-// Desafio 1
+// Desafio 1 - COMCLUIDO
 function compareTrue(parametro1, parametro2) {
 if (parametro1 === true && parametro2 === true) {
   return true;
@@ -12,20 +12,31 @@ const girafa = true;
 
 console.log(compareTrue(macaco,girafa));
 
-// Desafio 2
-function calcArea() {
-  // seu código aqui
+// Desafio 2 - NÃO PASSOU
+
+function calcArea(base, height) {
+  return ((base*height)/2)
 }
+calcArea(10,50);
+calcArea(5,2);
+calcArea(51,1);
+ 
 
 // Desafio 3
 function splitSentence() {
   // seu código aqui
 }
 
-// Desafio 4
-function concatName() {
-  // seu código aqui
+
+function concatName([]) {
+ console.log(concatName[concatName.length -1], concatName[0]);
 }
+
+concatName['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+concatName['foguete', 'não', 'tem', 'ré'];
+concatName['captain', 'my', 'captain'];
+
+
 
 // Desafio 5
 function footballPoints() {
@@ -33,14 +44,24 @@ function footballPoints() {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+// function highestCount() {
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+
+function catAndMouse(mouse, cat1, cat2) {
+  if ((Math.abs(mouse - cat1) > Math.abs(mouse - cat2))) {
+  return "cat2";
+} else if ((Math.abs(mouse - cat2)) > (Math.abs(mouse - cat1))) {
+  return "cat1";
+} else if ((Math.abs(mouse - cat2)) === (Math.abs(mouse - cat1))) {
+  return "os gatos trombam e o rato foge";
 }
+}
+console.log(catAndMouse(0, 3, 2));
+console.log(catAndMouse(10, 4, 22));
+console.log(catAndMouse(1, 0, 2));
+
+
 
 // Desafio 8
 
@@ -63,28 +84,45 @@ function fizzBuzz(array) {
 
 
 // Desafio 9
-function encode() {
+// function encode(string) {
+// let arrayArmazena = string.split('');
+// for (let i=0; i<arrayArmazena.length; i += 1) {
+//   if (arrayArmazena[i] === 'a') {
+//     arrayArmazena[i] = '1';
+//   } else if (arrayArmazena[i] === 'e') {
+//     arrayArmazena[i] = '2';
+//   } else if (arrayArmazena[i] === 'i') {
+//     arrayArmazena[i] = '3';
+//   } else if (arrayArmazena[i] === 'o') {
+//     arrayArmazena[i] ='4';
+//   } else if (arrayArmazena[i] === 'u') {
+//     arrayArmazena[i] = '5';
+//   }
+// }
+// }
+// console.log (encode('a hello aeiou'));
+
+
+
+// function decode() {
   // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
+
 
 // Desafio 10
-function techList() {
-  // seu código aqui
-}
+// function techList() {
+//   // seu código aqui
+// }
 
-module.exports = {
-  calcArea,
-  catAndMouse,
-  compareTrue,
-  concatName,
-  decode,
-  encode,
-  fizzBuzz,
-  footballPoints,
-  highestCount,
-  splitSentence,
-  techList,
-};
+// module.exports = {
+//   calcArea,
+//   catAndMouse,
+//   compareTrue,
+//   concatName,
+//   decode,
+//   encode,
+//   fizzBuzz,
+//   footballPoints,
+//   highestCount,
+//   splitSentence,
+//   techList,
+// };
