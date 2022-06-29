@@ -44,7 +44,7 @@ function footballPoints() {
 function highestCount() {
 
 }
-// Desafio 7 - NÃO PASSOU
+// Desafio 7 - CONCLUIDO
 
 function catAndMouse(mouse, cat1, cat2) {
   if ((Math.abs(mouse - cat1) > Math.abs(mouse - cat2))) {
