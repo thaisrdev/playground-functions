@@ -12,7 +12,7 @@ const girafa = true;
 
 console.log(compareTrue(macaco,girafa));
 
-// Desafio 2 - NÃO PASSOU
+// Desafio 2 - CONCLUIDO
 
 function calcArea(base, height) {
   return ((base*height)/2)
@@ -27,13 +27,25 @@ function splitSentence() {
 }
 
 // Desafio 4
-function concatName() {
-//  console.log(concatName[concatName.length -1], concatName[0]);
-}
 
-// concatName['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-// concatName['foguete', 'não', 'tem', 'ré'];
-// concatName['captain', 'my', 'captain'];
+// 4 - Crie uma função que use concatenação de strings
+// Implemente a função concatName que recebe um array de strings e retorna o último item na primeira posição
+
+// A função `concatName` recebe um array de strings e deve retornar uma string com o formato `'ÚLTIMO ITEM, PRIMEIRO ITEM`, independente do tamanho do array.
+// Exemplo:
+
+// Caso o parâmetro passado para a função concatName seja o array ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'], a função deverá retornar Paolillo, Lucas.
+// O que será testado:
+
+// Retorne 'Paolillo, Lucas' quando o parâmetro passado na funcão concatName seja ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+
+// Retorne 'ré, foguete' quando o parâmetro passado na funcão concatName seja ['foguete', 'não', 'tem', 'ré'];
+
+// Retorne 'captain, captain' quando o parâmetro passado na funcão concatName seja ['captain', 'my', 'captain'].
+
+function concatName(arrayStrings) {
+    // return "'"((arrayStrings[arrayStrings.lenght -1]) ", " (arrayStrings[0]))
+  }
 
 // // Desafio 5
 function footballPoints() {
@@ -41,8 +53,14 @@ function footballPoints() {
 }
 
 // Desafio 6
-function highestCount() {
-
+function highestCount(array4) {
+  let repeat =0;
+  for (let index=0; index < array4.length; index += 1) {
+    if (Math.max(...array4) === array4[index]) {
+      repeat += 1;
+    }
+  }
+return repeat
 }
 // Desafio 7 - CONCLUIDO
 
