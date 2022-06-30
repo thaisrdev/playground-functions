@@ -22,35 +22,22 @@ console.log(calcArea(5,2));
 console.log(calcArea(51,1));
 
 // // Desafio 3
-function splitSentence() {
-//   // seu código aqui
+function splitSentence(frase) {
+let divideFrase;
+divideFrase.push - frames.split ("")
+return divideFrase;
 }
 
 // Desafio 4 - CONCLUIDO
 
 function concatName(arrayStrings) {
-  let newArray = []
+  let newArray = [];
   newArray.push(arrayStrings.at(-1));
   newArray.push(arrayStrings.at(0));
-  return newArray.join(', ')
+  return newArray.join(', ');
 }
 
-// // Desafio 5
-
-// 5 - Crie uma função que calcula a quantidade de pontos em um campeonato de futebol
-// Implemente a função footballPoints que calcula a pontuação de um time de futebol em um campeonato a partir do número de vitórias e empates
-
-// A função footballPoints recebe o número de vitórias (wins) e o número de empates (ties) e retorna a quantidade de pontos que o time marcou em um campeonato. Para isso, considere que:
-
-// wins: é o número de vitórias e vale 3 pontos;
-// ties: é o número de empates e vale 1 ponto.
-// O que será testado:
-
-// Retorne 50 pontos quando o time tenha 14 vitórias e 8 empates;
-
-// Retorne 5 pontos quando o time tenha 1 vitória e 2 empates;
-
-// Retorne 0 pontos quando o time tenha 0 vitórias e 0 empates.
+// // Desafio 5 - CONCLUIDO
 
 function footballPoints(wins, ties) {
 return ((wins*3)+ (ties*1));
@@ -67,7 +54,7 @@ function highestCount(array4) {
       repeat += 1;
     }
   }
-return repeat
+return repeat;
 }
 // Desafio 7 - CONCLUIDO
 
