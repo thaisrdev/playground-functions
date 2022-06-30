@@ -44,15 +44,18 @@ function splitSentence() {
 // Retorne 'captain, captain' quando o parâmetro passado na funcão concatName seja ['captain', 'my', 'captain'].
 
 function concatName(arrayStrings) {
-    // return "'"((arrayStrings[arrayStrings.lenght -1]) ", " (arrayStrings[0]))
-  }
+  let newArray = []
+  newArray.push(arrayStrings.at(-1));
+  newArray.push(arrayStrings.at(0));
+  return newArray.join(', ')
+}
 
 // // Desafio 5
 function footballPoints() {
 //   // seu código aqui
 }
 
-// Desafio 6
+// Desafio 6 - CONCLUIDO
 function highestCount(array4) {
   let repeat =0;
   for (let index=0; index < array4.length; index += 1) {
