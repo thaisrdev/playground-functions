@@ -29,7 +29,7 @@ return divide;
 }
 splitSentence('go Trybe');
 
-// Desafio 4 - CONCLUIDO
+// // Desafio 4  - CONCLUIDO
 
 function concatName(arrayStrings) {
   let newArray = [];
@@ -37,6 +37,9 @@ function concatName(arrayStrings) {
   newArray.push(arrayStrings.at(0));
   return newArray.join(', ');
 }
+concatName['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+concatName['foguete', 'não', 'tem', 'ré'];
+concatName['captain', 'my', 'captain'];
 
 // // Desafio 5 - CONCLUIDO
 
