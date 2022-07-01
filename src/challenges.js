@@ -33,13 +33,10 @@ splitSentence('go Trybe');
 
 function concatName(arrayStrings) {
   let newArray = [];
-  newArray.push(arrayStrings.at(-1));
-  newArray.push(arrayStrings.at(0));
+  newArray.push(arrayStrings[arrayStrings.length -1]);
+  newArray.push(arrayStrings[0]);
   return newArray.join(', ');
 }
-concatName['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-concatName['foguete', 'não', 'tem', 'ré'];
-concatName['captain', 'my', 'captain'];
 
 // // Desafio 5 - CONCLUIDO
 
