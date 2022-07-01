@@ -21,7 +21,7 @@ console.log(calcArea(10,50));
 console.log(calcArea(5,2));
 console.log(calcArea(51,1));
 
-// // Desafio 3
+// // Desafio 3 - CONCLUIDO
 
 function splitSentence(text) {
   let divide = text.split(' ');
@@ -89,10 +89,10 @@ function fizzBuzz(array) {
  }
  return result;
  }
- console.log(fizzBuzz([9, 25])); //TESTE
+ console.log(fizzBuzz([9, 25])); 
 
 // Desafio 9
-function encode(string) {
+function encode() {
 // let arrayArmazena = string.split('');
 // for (let i=0; i<arrayArmazena.length; i += 1) {
 //   if (arrayArmazena[i] === 'a') {
