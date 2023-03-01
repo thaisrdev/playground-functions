@@ -1,3 +1,6 @@
+/* eslint-disable no-undef */
+/* eslint-disable sonarjs/cognitive-complexity */
+/* eslint-disable complexity */
 // Desafio 1 - CONCLUIDO
 function compareTrue(parametro1, parametro2) {
   if (parametro1 === true && parametro2 === true) {
@@ -7,7 +10,7 @@ function compareTrue(parametro1, parametro2) {
 }
 
 const macaco = true;
-const girafa = true;
+const girafa = false;
 
 console.log(compareTrue(macaco, girafa));
 
@@ -26,7 +29,7 @@ function splitSentence(text) {
   let divide = text.split(' ');
   return divide;
 }
-splitSentence('go Trybe');
+console.log(splitSentence('go Trybe'));
 
 // // Desafio 4  - CONCLUIDO
 
@@ -36,6 +39,8 @@ function concatName(arrayStrings) {
   newArray.push(arrayStrings[0]);
   return newArray.join(', ');
 }
+
+console.log(concatName(['um', 'dois', 'três']));
 
 // // Desafio 5 - CONCLUIDO
 
@@ -47,15 +52,18 @@ console.log(footballPoints(1, 2));
 console.log(footballPoints(0, 0));
 
 // Desafio 6 - CONCLUIDO
-function highestCount(array4) {
+
+function highestCount(array) {
   let repeat = 0;
-  for (let index = 0; index < array4.length; index += 1) {
-    if (Math.max(...array4) === array4[index]) {
+  for (let index = 0; index < array.length; index += 1) {
+    if (Math.max(...array) === array[index]) {
       repeat += 1;
     }
   }
   return repeat;
 }
+console.log(highestCount([1, 2, 3, 9, 9, 8, 9]));
+
 // Desafio 7 - CONCLUIDO
 
 function catAndMouse(mouse, cat1, cat2) {
@@ -68,7 +76,7 @@ function catAndMouse(mouse, cat1, cat2) {
   }
 }
 console.log(catAndMouse(0, 3, 2));
-console.log(catAndMouse(10, 4, 22));
+console.log(catAndMouse(0, 2, 3));
 console.log(catAndMouse(1, 0, 2));
 
 // Desafio 8 - CONCLUIDO
@@ -88,11 +96,10 @@ function fizzBuzz(array) {
   }
   return result;
 }
-console.log(fizzBuzz([9, 25]));
+console.log(fizzBuzz([9, 25, 15, 2]));
 
 // Desafio 9
 // eslint-disable-next-line complexity
-let string = '';
 function encode(string) {
   let letras = string.split('');
   for (let index = 0; index < letras.length; index += 1) {
@@ -108,34 +115,45 @@ function encode(string) {
       letras[index] = '5';
     }
   }
- return letras.join('');
+  return letras.join('');
 }
 console.log(encode('a hello aeiou'));
 
-  function decode(string) {
-    let letras = string.split('');
-    for (let index = 0; index < letras.length; index += 1) {
-      if (letras[index] === '1') {
-        letras[index] = 'a';
-      } if (letras[index] === '2') {
-        letras[index] = 'e';
-      } if (letras[index] === '3') {
-        letras[index] = 'i';
-      } if (letras[index] === '4') {
-        letras[index] = 'o';
-      } if (letras[index] === '5') {
-        letras[index] = 'u';
-      }
+function decode(string) {
+  let letras = string.split('');
+  for (let index = 0; index < letras.length; index += 1) {
+    if (letras[index] === '1') {
+      letras[index] = 'a';
+    } if (letras[index] === '2') {
+      letras[index] = 'e';
+    } if (letras[index] === '3') {
+      letras[index] = 'i';
+    } if (letras[index] === '4') {
+      letras[index] = 'o';
+    } if (letras[index] === '5') {
+      letras[index] = 'u';
     }
-   return letras.join('');
   }
-  console.log(decode('1 h2ll4 12345'));
-
+  return letras.join('');
+}
+console.log(decode('1 h2ll4 12345'));
 
 // Desafio 10
-function techList() {
-//   // seu código aqui
-}
+
+// let arrayobj = [];
+// function techList(array, string) {
+//   if (!array && !string) {
+//     return 'Vazio!';
+//   } for (let index = 0; index < array.length; index += 0) {
+//     let obj = {
+//       tech: array[index],
+//       name: string,
+//     };
+//     arrayobj.push(obj);
+//   }
+//   return arrayobj;
+// }
+// console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
 module.exports = {
   calcArea,
@@ -148,5 +166,5 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
-  techList,
+  // techList,
 };
